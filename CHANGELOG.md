@@ -21,6 +21,7 @@ The format of this change log follows the advice given at [Keep a CHANGELOG](htt
 - _publicaccess_ was removed from program export, it is ignored in program upload
 - migration to new forms library
 - program scheduling delays are entered as intervals with a single time unit
+- cohort names link to cohort management, the advanced cohort management page is used when installed
 
 ### Fixed
 
