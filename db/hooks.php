@@ -41,4 +41,8 @@ $callbacks = [
         'hook' => \tool_mulib\hook\extdb_query_classes::class,
         'callback' => [\tool_muprog\local\extdb\query\allocation::class, 'query_manager_callback'],
     ],
+    [
+        'hook' => \tool_mucohort\hook\cohort_usage::class,
+        'callback' => [\tool_muprog\callback\tool_mucohort::class, 'cohort_usage'],
+    ],
 ];

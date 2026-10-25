@@ -56,6 +56,7 @@ $string['calendarprogramdue'] = '{$a} is due';
 $string['calendarprogramend'] = '{$a} ends';
 $string['calendarprogramstart'] = '{$a} starts';
 $string['certificatetemplatechoose'] = 'Choose a template...';
+$string['cohort_usage_source'] = 'Programs: {$a}';
 $string['columnusedalready'] = 'Column is used already';
 $string['completiondate'] = 'Completion date';
 $string['completiondelay'] = 'Completion delay';
