@@ -408,6 +408,21 @@ final class upload_test extends \advanced_testcase {
         $this->process_and_delete_programs($rawprograms);
     }
 
+    public function test_fixtures_csv_custom_delimiter(): void {
+        global $CFG;
+        $this->setAdminUser();
+        $fixturesdir = $this->prepare_upload_fixtures();
+
+        $CFG->CSV_DELIMITER = '|';
+        $csvfiles = [
+            "$fixturesdir/programs.csv",
+            "$fixturesdir/programs_contents.csv",
+            "$fixturesdir/programs_sources.csv",
+        ];
+        $rawprograms = \tool_muprog\local\upload::decode_csv_files($csvfiles, 'UTF-8');
+        $this->process_and_delete_programs($rawprograms);
+    }
+
     /**
      * Files exported before migration to Universal catalogue contain catalogue visibility flag,
      * the flag was called 'public' originally and 'publicaccess' later, it is ignored now.

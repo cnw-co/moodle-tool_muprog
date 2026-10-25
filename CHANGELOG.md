@@ -34,3 +34,4 @@ The format of this change log follows the advice given at [Keep a CHANGELOG](htt
 - manual allocation and evidence upload did not detect user column used also as another column
 - allocation import date errors were not displayed
 - program certificate expiry allowed a zero relative expiry
+- program upload failed when $CFG->CSV_DELIMITER was set

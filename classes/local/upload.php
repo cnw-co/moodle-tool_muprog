@@ -678,7 +678,7 @@ final class upload {
 
         $delimiters = [',', ';', ':', "\t"];
         if (isset($CFG->CSV_DELIMITER) && strlen($CFG->CSV_DELIMITER) === 1) {
-            if (!in_array($delimiters, $CFG->CSV_DELIMITER, true)) {
+            if (!in_array($CFG->CSV_DELIMITER, $delimiters, true)) {
                 $delimiters[] = $CFG->CSV_DELIMITER;
             }
         }
