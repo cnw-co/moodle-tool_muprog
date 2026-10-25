@@ -85,9 +85,6 @@ class renderer extends \plugin_renderer_base {
         }
         $description = file_rewrite_pluginfile_urls($program->description, 'pluginfile.php', $syscontext->id, 'tool_muprog', 'description', $program->id);
         $description = format_text($description, $program->descriptionformat, ['context' => $syscontext]);
-        if (trim($description) === '') {
-            $description = '&nbsp;';
-        }
         $details->add(get_string('description'), $description);
         $archived = $program->archived ? get_string('yes') : get_string('no');
         if ($canedit) {
