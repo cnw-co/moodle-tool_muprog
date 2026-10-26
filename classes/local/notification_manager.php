@@ -43,6 +43,7 @@ final class notification_manager extends \tool_mulib\local\notification\manager 
             'completion' => notification\completion::class,
             'duesoon' => notification\duesoon::class,
             'due' => notification\due::class,
+            'reminder' => notification\reminder::class,
             'endsoon' => notification\endsoon::class,
             'endcompleted' => notification\endcompleted::class,
             'endfailed' => notification\endfailed::class,

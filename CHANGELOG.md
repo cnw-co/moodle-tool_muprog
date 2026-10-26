@@ -11,6 +11,7 @@ The format of this change log follows the advice given at [Keep a CHANGELOG](htt
 - cohort usage in programs is listed in advanced cohort management
 - programs may be created as drafts, users cannot be allocated until the program is released
 - CLI script for duplication of programs with courses
+- weekly reminder notification for programs
 
 ### Changed
 
