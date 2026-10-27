@@ -6,7 +6,9 @@ The format of this change log follows the advice given at [Keep a CHANGELOG](htt
 
 ## [Unreleased](https://github.com/mutms/moodle-tool_muprog/compare/v4.5.15.01...MOODLE_405_STABLE)
 
-- No changes
+### Added
+
+- weekly reminder notification for programs
 
 ## [v4.5.15.01](https://github.com/mutms/moodle-tool_muprog/compare/v4.5.14.03...v4.5.15.01) - 2026-09-19
 

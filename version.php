@@ -30,7 +30,7 @@ defined('MOODLE_INTERNAL') || die();
 
 /** @var stdClass $plugin */
 $plugin->component = 'tool_muprog';
-$plugin->version = 2026091901;
+$plugin->version = 2026091902;
 $plugin->requires = 2024100700;
 $plugin->supported = [405, 405];
 $plugin->incompatible = 500;

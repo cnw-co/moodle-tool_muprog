@@ -58,24 +58,26 @@ Feature: Program notifications management tests
       | User allocated          | 1 |
       | Program started         | 1 |
       | Program completed       | 1 |
-      | Program due date soon   | 1 |
-      | Program overdue         | 1 |
-      | Program end date soon   | 1 |
-      | Completed program ended | 1 |
-      | Failed program ended    | 1 |
-      | User deallocated        | 1 |
+      | Program due date soon       | 1 |
+      | Program overdue             | 1 |
+      | Weekly reminder             | 1 |
+      | Program end date soon       | 1 |
+      | Completed program ended     | 1 |
+      | Failed program ended        | 1 |
+      | User deallocated            | 1 |
     And I click on "Add notification" "button" in the ".modal-dialog" "css_element"
     Then the following should exist in the "tool_muprog_notifications" table:
-      | Notification            | Customised | Enabled |
-      | User allocated          | No         | Yes     |
-      | Program started         | No         | Yes     |
-      | Program completed       | No         | Yes     |
-      | Program due date soon   | No         | Yes     |
-      | Program overdue         | No         | Yes     |
-      | Program end date soon   | No         | Yes     |
-      | Completed program ended | No         | Yes     |
-      | Failed program ended    | No         | Yes     |
-      | User deallocated        | No         | Yes     |
+      | Notification                | Customised | Enabled |
+      | User allocated              | No         | Yes     |
+      | Program started             | No         | Yes     |
+      | Program completed           | No         | Yes     |
+      | Program due date soon       | No         | Yes     |
+      | Program overdue             | No         | Yes     |
+      | Weekly reminder             | No         | Yes     |
+      | Program end date soon       | No         | Yes     |
+      | Completed program ended     | No         | Yes     |
+      | Failed program ended        | No         | Yes     |
+      | User deallocated            | No         | Yes     |
 
     And I follow "User allocated"
     And I press "Back"
@@ -86,6 +88,8 @@ Feature: Program notifications management tests
     And I follow "Program due date soon"
     And I press "Back"
     And I follow "Program overdue"
+    And I press "Back"
+    And I follow "Weekly reminder"
     And I press "Back"
     And I follow "Program end date soon"
     And I press "Back"
